@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cart</title>
+</head>
+<body>
+<h1>Shopping Cart</h1>
+<ul>
+{% for order in orders %}
+<li>{{ order.product.name }} - {{ order.quantity }}</li>
+{% endfor %}
+</ul>
+<a href="/checkout">Checkout</a>
+</body>
+</html>
+
+
